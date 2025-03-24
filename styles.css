@@ -42,28 +42,43 @@ body {
 
 /* 하단 정보 섹션 */
 .info-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 0;  /* 상단 마진 제거 */
+    border-radius: 0 0 0.5rem 0.5rem;  /* 하단만 둥글게 */
 }
 
-.info-item {
-    flex: 1;
+.intro-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+.links-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.link-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 .link-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-decoration: none;
     color: black;
     transition: all 0.3s ease-in-out;
+    gap: 0.5rem;
 }
 
 .link-item:hover {
@@ -79,7 +94,6 @@ body {
     width: 2.5rem;
     height: 2.5rem;
     color: #e53e3e;
-    margin-bottom: 0.25rem;
 }
 
 .hospital-logo {
@@ -87,7 +101,6 @@ body {
     height: 3rem;
     object-fit: contain;
     border-radius: 9999px;
-    margin-bottom: 0.25rem;
 }
 
 .link-text {
@@ -95,8 +108,16 @@ body {
     font-weight: bold;
 }
 
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;  /* center에서 flex-end로 변경 */
+    margin-top: 1rem;
+    padding-right: 2rem;  /* 오른쪽 여백 추가 */
+}
+
 .contact-info {
-    text-align: right;
+    text-align: right;  /* center에서 right로 변경 */
 }
 
 .contact-title {
@@ -138,4 +159,74 @@ body {
 
 .contact-phone {
     font-weight: bold;
+}
+
+/* 모바일 반응형 스타일 */
+@media (max-width: 640px) {
+    .links-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .link-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .link-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-container {
+        margin-top: 1.5rem;
+    }
+}
+
+/* 병원 소개 섹션 */
+.intro-section {
+    background-color: #4299E1;  /* 더 밝은 파란색으로 변경 */
+    color: white;
+    padding: 2rem;
+    margin: 2rem auto 0 auto;  /* 하단 마진 제거 */
+    border-radius: 1rem 1rem 0 0;  /* 상단만 둥글게 */
+    text-align: center;
+    max-width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.intro-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* 기존 이미지 섹션의 패딩 수정 */
+.image-section {
+    padding: 20px 0 2rem 0;  /* 하단 패딩 줄임 */
+}
+
+/* 모바일 반응형 스타일 추가 */
+@media (max-width: 640px) {
+    .intro-title {
+        font-size: 1.5rem;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+    }
+    
+    .intro-section {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
 }
