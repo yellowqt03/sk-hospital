@@ -275,3 +275,87 @@ body {
         margin: 1.5rem auto;
     }
 }
+
+* 병원 소개 섹션 스타일 수정 */
+.intro-section {
+    background-color: #4299E1;
+    color: white;
+    padding: 1.5rem;
+    margin: 0.5rem auto;  /* 상하 여백을 0.5rem으로 조정 */
+    width: 90%;
+    max-width: 800px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* 하단 정보 섹션 스타일 수정 */
+.info-section {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    margin: 0.5rem auto;  /* 상하 여백을 0.5rem으로 조정 */
+    width: 90%;
+    max-width: 800px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* 모바일 반응형 스타일 수정 */
+@media (max-width: 640px) {
+    .intro-section,
+    .info-section {
+        width: 95%;
+        margin: 0.25rem auto;  /* 모바일에서는 여백을 더 줄임 */
+        padding: 1rem;
+    }
+}
+
+/* 병원 소개 섹션 스타일 수정 */
+.intro-section {
+    background-color: #4299E1;
+    color: white;
+    padding: 1.5rem;
+    margin: 0.5rem auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;  /* 내용이 모서리를 벗어나지 않도록 처리 */
+}
+
+/* 하단 정보 섹션 스타일 수정 */
+.info-section {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    margin: 0.5rem auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;  /* 내용이 모서리를 벗어나지 않도록 처리 */
+}
+
+/* 모바일 반응형 스타일 수정 */
+@media (max-width: 640px) {
+    .intro-section,
+    .info-section {
+        width: 95%;
+        margin: 0.25rem auto;
+        padding: 1rem;
+        border-radius: 1rem;  /* 모바일에서도 동일한 라운드 처리 */
+    }
+
+    .links-container {
+        gap: 1rem;
+        padding: 0 0.5rem;
+        margin: 0;  /* 여백 제거 */
+    }
+
+    .contact-info {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        border-radius: 0.75rem;  /* 연락처 정보 섹션도 라운드 처리 */
+    }
+}
