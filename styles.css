@@ -52,7 +52,7 @@ body {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);  /* 이미지와 동일한 그림자 효과 */
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
 }
 
 .intro-title {
@@ -121,13 +121,13 @@ body {
 .contact-container {
     width: 100%;
     display: flex;
-    justify-content: flex-end;  /* center에서 flex-end로 변경 */
+    justify-content: flex-end;
     margin-top: 1rem;
-    padding-right: 2rem;  /* 오른쪽 여백 추가 */
+    padding-right: 2rem;
 }
 
 .contact-info {
-    text-align: right;  /* center에서 right로 변경 */
+    text-align: right;
 }
 
 .contact-title {
@@ -174,43 +174,43 @@ body {
 /* 모바일 반응형 스타일 수정 */
 @media (max-width: 640px) {
     .links-container {
-        flex-direction: row;  /* 가로 배치 유지 */
-        justify-content: space-between;  /* 양쪽 끝으로 벌리기 */
-        padding: 0 1rem;  /* 좌우 여백 추가 */
-        gap: 1rem;  /* 요소 사이 간격 */
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
+        gap: 1rem;
     }
 
     .link-wrapper {
         padding: 0;
-        width: auto;  /* 자동 너비 */
+        width: auto;
     }
 
     .link-item {
-        flex-direction: column;  /* 아이콘과 텍스트 세로 배치 */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .youtube-icon {
-        margin-bottom: 0.5rem;  /* 아이콘 아래 여백 */
+        margin-bottom: 0.5rem;
     }
 
     .hospital-logo {
-        margin-bottom: 0.5rem;  /* 로고 아래 여백 */
+        margin-bottom: 0.5rem;
     }
 
     .link-text {
-        font-size: 0.75rem;  /* 모바일에서 텍스트 크기 줄임 */
+        font-size: 0.75rem;
     }
 
     .contact-container {
         margin-top: 1.5rem;
-        padding-right: 0;  /* 오른쪽 패딩 제거 */
+        padding-right: 0;
     }
 
     .contact-info {
-        width: 100%;  /* 전체 너비 사용 */
-        text-align: center;  /* 가운데 정렬 */
+        width: 100%;
+        text-align: center;
     }
 
     .contact-title {
@@ -226,7 +226,7 @@ body {
 /* 호버 효과 시 그림자 강화 */
 .intro-section:hover,
 .info-section:hover {
-    box-shadow: 6px 6px 12px rgba(0,0,0,0.3);  /* 이미지와 동일한 호버 그림자 효과 */
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.3);
 }
 
 /* 병원 소개 섹션 */
@@ -238,7 +238,7 @@ body {
     border-radius: 1rem 1rem 0 0;
     text-align: center;
     max-width: 90%;
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);  /* 이미지와 동일한 그림자 효과 */
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
     transition: all 0.3s ease-in-out;
 }
 
@@ -257,7 +257,7 @@ body {
 
 /* 기존 이미지 섹션의 패딩 수정 */
 .image-section {
-    padding: 20px 0 2rem 0;  /* 하단 패딩 줄임 */
+    padding: 20px 0 2rem 0;
 }
 
 /* 모바일 반응형 스타일 추가 */
@@ -276,86 +276,3 @@ body {
     }
 }
 
-* 병원 소개 섹션 스타일 수정 */
-.intro-section {
-    background-color: #4299E1;
-    color: white;
-    padding: 1.5rem;
-    margin: 0.5rem auto;  /* 상하 여백을 0.5rem으로 조정 */
-    width: 90%;
-    max-width: 800px;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: all 0.3s ease-in-out;
-}
-
-/* 하단 정보 섹션 스타일 수정 */
-.info-section {
-    background-color: #f8fafc;
-    padding: 1.5rem;
-    margin: 0.5rem auto;  /* 상하 여백을 0.5rem으로 조정 */
-    width: 90%;
-    max-width: 800px;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-/* 모바일 반응형 스타일 수정 */
-@media (max-width: 640px) {
-    .intro-section,
-    .info-section {
-        width: 95%;
-        margin: 0.25rem auto;  /* 모바일에서는 여백을 더 줄임 */
-        padding: 1rem;
-    }
-}
-
-/* 병원 소개 섹션 스타일 수정 */
-.intro-section {
-    background-color: #4299E1;
-    color: white;
-    padding: 1.5rem;
-    margin: 0.5rem auto;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;  /* 내용이 모서리를 벗어나지 않도록 처리 */
-}
-
-/* 하단 정보 섹션 스타일 수정 */
-.info-section {
-    background-color: #f8fafc;
-    padding: 1.5rem;
-    margin: 0.5rem auto;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    overflow: hidden;  /* 내용이 모서리를 벗어나지 않도록 처리 */
-}
-
-/* 모바일 반응형 스타일 수정 */
-@media (max-width: 640px) {
-    .intro-section,
-    .info-section {
-        width: 95%;
-        margin: 0.25rem auto;
-        padding: 1rem;
-        border-radius: 1rem;  /* 모바일에서도 동일한 라운드 처리 */
-    }
-
-    .links-container {
-        gap: 1rem;
-        padding: 0 0.5rem;
-        margin: 0;  /* 여백 제거 */
-    }
-
-    .contact-info {
-        width: 100%;
-        text-align: center;
-        margin-top: 1rem;
-        border-radius: 0.75rem;  /* 연락처 정보 섹션도 라운드 처리 */
-    }
-}
